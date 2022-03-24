@@ -5,7 +5,8 @@
   --primary-white-color: #ffffff;
   --primary-title-color: #212121;
   --primary-margin-number: 30px;
-  --card-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  --card-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 * {
@@ -36,11 +37,20 @@ body {
   color: var(--primary-text-color);
 }
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+  // outline: 2px solid red;
+  @include tel {
+    width: 480px;
+  }
+  @include tab {
+    width: 768px;
+  }
+  @include desk {
+    width: 1200px;
+  }
 }
 .page {
   background-color: #ffffff;
@@ -69,7 +79,12 @@ body {
   color: var(--accent-text-color);
 }
 .section {
-  padding: 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .center {
   text-align: center;

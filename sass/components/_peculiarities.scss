@@ -1,3 +1,6 @@
+.peculiarities {
+  padding-left: 0;
+}
 .peculiarities-list__icon {
   display: flex;
   justify-content: center;
@@ -10,17 +13,26 @@
   height: 100%;
 }
 
-// .peculiarities-list__icon + .peculiarities-list__icon {
-//   margin-left: 30px;
-// }
 .peculiarities-list {
-  display: flex;
+  margin-bottom: -30px;
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
-.peculiarities-list__item:nth-last-child(n + 2) {
-  margin-right: var(--primary-margin-number);
-}
+
 .peculiarities-list__item {
-  width: 270px;
+  width: 450px;
+  margin-bottom: 30px;
+
+  @include tab {
+    margin-left: 30px;
+    width: calc(100% / 2 - var(--primary-margin-number));
+  }
+  @include desk {
+    width: calc(100% / 4 - var(--primary-margin-number));
+  }
 }
 .peculiarities-list__title {
   font-size: 14px;
