@@ -23,7 +23,8 @@
 }
 
 .peculiarities-list__item {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 
   @include tab {
