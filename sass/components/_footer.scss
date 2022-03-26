@@ -2,39 +2,13 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
-  @include desk {
-    text-align: start;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .footer-container {
-  margin-left: auto;
-  @include desk {
-    display: flex;
-    align-items: baseline;
-  }
-}
-@include tab {
-  .footer-top {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-  }
+  display: flex;
+  align-items: baseline;
 }
 .footer-nav {
-  @include desk {
-    margin-right: 70px;
-  }
-}
-.address-list {
-  margin-bottom: 60px;
+  margin-right: 70px;
 }
 .address-list__address {
   font-style: normal;
@@ -61,8 +35,8 @@
   display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 26px;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   margin-bottom: 20px;
@@ -70,10 +44,6 @@
   &:hover,
   &:focus {
     color: var(--accent-text-color);
-  }
-  @include desk {
-    font-size: 26px;
-    line-height: calc(31 / 26);
   }
 }
 
@@ -97,9 +67,7 @@
 }
 
 .footer-social {
-  @include desk {
-    margin-right: 93px;
-  }
+  margin-right: 93px;
 }
 .footer-social__title {
   font-style: normal;
@@ -109,15 +77,12 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-  @include desk {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .footer-social-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer-social-list__link {
@@ -146,7 +111,6 @@
 .footer-social-list__item + .footer-social-list__item {
   margin-left: 10px;
 }
-
 .footer-form__label {
   display: block;
   font-weight: bold;
@@ -164,7 +128,7 @@
   justify-content: center;
 } */
 .footer-form__mail {
-  width: 450px;
+  width: 350px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -173,10 +137,6 @@
   border-radius: 4px;
   padding-left: 15px;
   outline: none;
-  margin-bottom: 20px;
-  @include desk {
-    width: 358px;
-  }
 }
 .footer-form__button {
   font-weight: bold;

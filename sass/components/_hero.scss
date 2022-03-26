@@ -1,71 +1,28 @@
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 210px;
   text-align: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/hero-bg-mob.jpg);
+    url(../image/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @include retina {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../image/hero-bg-mob-2x.jpg);
-  }
-  @include tab {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../image/hero-bg-tab.jpg);
-    @include retina {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../image/hero-bg-tab-2x.jpg);
-    }
-  }
-  @include desk {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../image/hero-bg.jpg);
-    @include retina {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../image/hero-bg-2x.jpg);
-    }
-  }
 }
-.hero-content {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  @include desk {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
+
 .hero__title {
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--primary-white-color);
   margin-bottom: var(--primary-margin-number);
-  @include desk {
-    font-size: 44px;
-    line-height: 1.36;
-  }
 }
 
 .hero__button.secondary {
