@@ -1,6 +1,10 @@
 .examples {
   padding-top: 0;
-  display: none;
+}
+@media screen and (max-width: 1199px) {
+  .examples {
+    display: none;
+  }
 }
 .examples__title {
   margin-bottom: 50px;
@@ -9,7 +13,7 @@
   position: relative;
   display: flex;
 }
-.eexamples-list__item:nth-last-child(n + 2) {
+.examples-list__item:nth-last-child(n + 2) {
   margin-right: var(--primary-margin-number);
 }
 .examples-list__item {

@@ -212,15 +212,33 @@
           <h2 class="examples__title title">Чем мы занимаемся</h2>
           <ul class="examples-list list">
             <li class="examples-list__item">
-              <img src="image/example-jpg-1.jpg" alt="печатает на маке" height="294" width="370" />
+              <picture>
+                  <source srcset="
+                  ./image/example-jpg-1.jpg    1x,
+                  ./image/example-jpg-1-2x.jpg 2x 
+                  " media="(min-width: 1200px)" />
+              <img src="./image/example-jpg-1.jpg" alt="печатает на маке"/>
+              </picture>
               <p class="examples-list__text">Десктопные приложения</p>
             </li>
             <li class="examples-list__item">
-              <img src="image/example-jpg-2.jpg" alt="смотрит в телефон" height="294" width="370" />
+              <picture>
+                <source srcset="
+                ./image/example-jpg-2.jpg    1x,
+                ./image/example-jpg-2-2x.jpg 2x 
+                " media="(min-width: 1200px)" />
+              <img src="image/example-jpg-2.jpg" alt="смотрит в телефон"/>
+              </picture>
               <p class="examples-list__text">Мобильные приложения</p>
             </li>
             <li class="examples-list__item">
-              <img src="image/example-jpg-3.jpg" alt="смотрит в плншет" height="294" width="370" />
+              <picture>
+              <source srcset="
+              ./image/example-jpg-3.jpg    1x,
+              ./image/example-jpg-3-2x.jpg 2x 
+              " media="(min-width: 1200px)" />
+              <img src="image/example-jpg-3.jpg" alt="смотрит в плншет"/>
+            </picture>
               <p class="examples-list__text">Дизайнерские решения</p>
             </li>
           </ul>
