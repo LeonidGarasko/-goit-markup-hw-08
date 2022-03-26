@@ -428,6 +428,7 @@ body {
 }
 
 .hero {
+  width: 100%;
   background-color: #2f303a;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-bg-mob.jpg);
