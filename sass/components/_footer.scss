@@ -21,21 +21,31 @@
     align-items: baseline;
   }
 }
-@include tab {
-  .footer-top {
+
+.footer-top {
+  margin-bottom: 60px;
+  @include tab {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
   }
 }
+@include desk {
+  .footer-top {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+}
 .footer-nav {
+  margin-bottom: 60px;
+  @include tab {
+    margin-bottom: 0;
+  }
   @include desk {
     margin-right: 70px;
   }
 }
-.address-list {
-  margin-bottom: 60px;
-}
+
 .address-list__address {
   font-style: normal;
   font-size: 14px;
@@ -96,11 +106,6 @@
   margin-bottom: 9px;
 }
 
-.footer-social {
-  @include desk {
-    margin-right: 93px;
-  }
-}
 .footer-social__title {
   font-style: normal;
   font-size: 14px;
@@ -117,7 +122,6 @@
 .footer-social-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer-social-list__link {
